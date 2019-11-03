@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working Late?"
+        android:textColor="#FFF"
+        android:textSize="36sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_calen"
+        android:layout_marginLeft="80dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"/>
+    </LinearLayout>
+    <Button
+        android:background="@drawable/bg_btn"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="34dp"
+        android:text="On these dates"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+
+
